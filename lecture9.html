@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 9</title>
+    <style>
+        .list-div {
+            width: 80%;
+            height: 100vh;
+            background-color: gray;
+            margin: auto;
+        }
+        .list-div ul {
+            /* list-style-type: square; */
+            list-style-type: none;
+        }
+        .list-div ul li { 
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: aquamarine;
+            width: 200px;
+        }
+        .list-div ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .list-div ul li:hover {
+            background-color: red;
+        }
+        .list-div ul li.active-li {
+            background-color: green;
+        }
+
+        .list-div ol {
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <div class="list-div">
+        <h3>Unordered list</h3>
+        <ul>
+            <li><a href="#">Bangla Subject</a></li>
+            <li class="active-li"><a href="#">English Subject</a></li>
+            <li><a href="#">Mathematics Subject</a></li>
+        </ul>
+
+        <h3>Ordered list</h3>
+        <ol>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio eligendi eveniet animi ipsum quas quae nisi iste! Consequuntur eum odit, pariatur itaque delectus animi repellendus ipsam optio quam libero illo ea nisi natus facilis exercitationem! Quis officia sint omnis alias harum obcaecati esse exercitationem nihil sit, itaque, ea laboriosam repellat temporibus earum dolor provident quam autem adipisci illo consequuntur nobis rerum, sed optio. Impedit expedita culpa iure odit autem sit esse quidem dolorum, aspernatur ipsum deleniti molestias dolores, adipisci doloribus repellendus beatae distinctio placeat perspiciatis excepturi eius. Voluptates ipsum totam sint ratione vel repellendus incidunt labore laboriosam placeat recusandae.</li>
+            <li>Bangla Subject</li>
+            <li>English Subject</li>
+        </ol>
+    </div>
+</body>
+</html>
