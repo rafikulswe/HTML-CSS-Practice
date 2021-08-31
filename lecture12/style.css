@@ -1,0 +1,19 @@
+.text-center {
+    text-align: center;
+}
+.table-example table {
+    min-width: 80%;
+}
+.table-example table, th, td {
+    border: 1px solid gray;
+}
+.table-example table {
+    border-collapse: collapse;
+}
+
+.table-example table td {
+    padding: 10px;
+}
+.table-example table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
