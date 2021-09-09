@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .mainDiv {
+            height: 300px;
+            width: 50%;
+            margin: auto;
+            border: 1px solid red;
+            position: relative;
+        }
+        .mainDiv .item1 {
+            background-color: purple;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+        }
+        .mainDiv .item1 img {
+            height: 100%;
+            width: 100%;
+        }
+        .mainDiv .item2 {
+            /* background-color: green; */
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            text-align: center;
+            color: white;
+            position: absolute;
+            left: 0px;
+            top: 50px;
+            /* visibility: hidden; */
+            opacity: 0;
+        }
+        .mainDiv .item2:hover .item2 {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="item1">
+            <img src="pineapple.jpg" alt="">
+        </div>
+        <div class="item2">
+            <h2>Rafikul Islam</h2>
+            <p>Lorem ipsum dolo</p>
+        </div>
+    </div>
+</body>
+</html>
