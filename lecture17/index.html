@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 17</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid red;
+            margin: 20px auto;
+        }
+        .card .hoverDiv {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .card .hoverDiv img {
+            max-width: 100%;
+        }
+        .card .hoverDiv .hoverInner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            width: 0;
+            height: 0;
+            background-color: rgba(3, 227, 252, 0.2);
+            opacity: 0;
+            transition: .5s;
+        }
+        .card .hoverDiv .hoverInner h2 {
+            margin-top: 150px;
+            font-size: 24px;
+        }
+        .card .hoverDiv:hover .hoverInner {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hoverDiv">
+            <img src="pineapple.jpg" alt="">
+            <div class="hoverInner">
+                <h2>Rafikul Islam Rafi</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
