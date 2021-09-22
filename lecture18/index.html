@@ -21,7 +21,7 @@
     </div>
 
     <div class="nav">
-        <ul>
+        <ul id="menubar">
             <li><a href="#">Home</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Services</a></li>
@@ -37,10 +37,67 @@
             <button>Get In Touch</button>
         </div>
     </div>
+    
     <div class="container">
-        <div class="card-body">
-            
+        <div class="service-section">
+            <div class="service-img" id="service-img">
+                <img src="image/img_1.jpg" alt="">
+            </div>
+            <div class="service-content">
+                <h1>LAND & PROPERTY</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?Minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <div class="service-content">
+                <h1>LAND & PROPERTY</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?Minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?
+                </p>
+                <ul>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+            <div class="service-img">
+                <img src="image/img_2.jpg" alt="">
+            </div>
         </div>
     </div>
+
+    <div class="container bg-gray">
+        <div class="service-item"></div>
+        <div class="service-item"></div>
+        <div class="service-item"></div>
+    </div>
+
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        
+        var header = document.getElementById("menubar");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
