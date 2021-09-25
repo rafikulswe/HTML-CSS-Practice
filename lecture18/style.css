@@ -142,6 +142,48 @@
     padding-left: 20px;
     line-height: 1.7rem;
 }
+/* End */
+.container-bg-gray {
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 100vh;
+}
+.container-bg-gray .service-items-parents {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.container-bg-gray .service-items-parents .service-item {
+    width: 33%;
+    padding: 25px;
+    background-color: #fff;
+    margin-right: 10px;
+    -webkit-box-shadow: 10px 11px 15px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 15px 2px rgba(0,0,0,0.75);
+    box-shadow: 10px 11px 15px 2px rgba(0,0,0,0.75);
+}
+.container-bg-gray .service-items-parents .service-item i {
+    color: #ff8b00;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.container-bg-gray .service-items-parents .service-item h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 15px;
+}
+.container-bg-gray .service-items-parents .service-item p {
+    line-height: 30px;
+    font-family: "Oswald", sans-serif;
+}
+
 
 
 /* Animation */
